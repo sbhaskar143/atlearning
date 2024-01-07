@@ -1,0 +1,12 @@
+#Are you looking for whitespace remover from anywhere in any string, small or large?
+#Here is a solution
+example_string = "Hello World, this              is      a solution,     I          think,         effective enough to        remove odd looking         whitespace      from a string"
+exa_str_list = example_string.split()
+result_list = []
+for substr in exa_str_list:
+  result_list.append(substr.strip())
+
+result_string = " ".join(result_list)
+print(result_string)
+
+#I very sure, you know it1
